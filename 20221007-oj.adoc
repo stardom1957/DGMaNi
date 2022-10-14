@@ -1,0 +1,29 @@
+= Ordre du jour de la rencontre du 2022-10-07
+_(exemple d'un ordre du jour avec AsciiDoc)_
+Lieu :    Chez Guy  
+Horaire : À partir de 13h30
+
+== Ordre du jour
+. Événements de la semaine précédente
+.. Activités diverses
+.. Acquisitions
+.. Informatique
+... Programmation
+... git et gitHub
+.. Robotique
+.. Autres
+. Démonstration de la nouvelle tablette Samsung
+. Utilisation de DGMaNi
+.. Discussion sur l'utilisation
+.. Discussion sur l'organisation
+.. Nomenclature
+.. Autres
+.. Varia  
+
+
+== Breuvages disponibles :
+  * Scotch Johnnie Walker Double Black
+  * Bourbon Maker's Mark
+  * Bourbon Wild Turkey
+  * Eau et autres diluants
+
