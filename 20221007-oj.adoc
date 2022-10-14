@@ -2,7 +2,8 @@
 
 _(exemple d'un ordre du jour avec AsciiDoc)_
 
-Lieu :    Chez Guy  
+Lieu :    Chez Guy
+
 Horaire : À partir de 13h30
 
 == Ordre du jour
