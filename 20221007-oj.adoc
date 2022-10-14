@@ -1,5 +1,7 @@
 = Ordre du jour de la rencontre du 2022-10-07
+
 _(exemple d'un ordre du jour avec AsciiDoc)_
+
 Lieu :    Chez Guy  
 Horaire : À partir de 13h30
 
@@ -17,8 +19,8 @@ Horaire : À partir de 13h30
 .. Discussion sur l'utilisation
 .. Discussion sur l'organisation
 .. Nomenclature
-.. Autres
-.. Varia  
+. Autres
+. Varia  
 
 
 == Breuvages disponibles :
@@ -26,4 +28,3 @@ Horaire : À partir de 13h30
   * Bourbon Maker's Mark
   * Bourbon Wild Turkey
   * Eau et autres diluants
-
