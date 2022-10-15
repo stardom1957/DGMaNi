@@ -1,9 +1,14 @@
 # DGMaNi
 Suivi pas (très) sérieux des rencontres hebdo de D et G
 ## Nomenclature des fichiers :
-AAAAMMJJ-xx.ext où **AAAAMMJJ** ont le sens habituel,
-**xx** seront deux lettres et **.ext** indique le type de fichier.
+AAAAMMJJ-xx.ext où
+- **AAAAMMJJ** a le sens habituel,
+- **-** le trait-d'union est obligatoire,
+- **xx** seront deux lettres et
+- **.ext** indique le type de fichier.
 
 Exemples :
+- **20221007** pour la rencontre du 7 octobre 2022
+- **-**
 - **oj** pour ***o**rdre du jour* et **cr** pour ***c**ompte-**r**endu*
-- **.ext** sera normalement **.md**, mais peut aussi être **.adoc**.
+- **.md** normalement, mais peut aussi être **.adoc**.
