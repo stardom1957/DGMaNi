@@ -7,11 +7,12 @@ Lieu :    Chez Guy
 Horaire : À partir de 13h30
 
 == Ordre du jour
-[loweralpha,start=6]
 . Événements de la semaine précédente
+[lowerroman]
 .. Activités diverses
 .. Acquisitions
 .. Informatique
+[upperalpha,start=25]
 ... Programmation
 ... git et gitHub
 .. Robotique
@@ -23,7 +24,6 @@ Horaire : À partir de 13h30
 .. Nomenclature
 . Autres
 . Varia  
-
 
 == Breuvages disponibles :
   * Scotch Johnnie Walker Double Black
