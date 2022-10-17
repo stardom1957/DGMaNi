@@ -1,5 +1,5 @@
 # DGMaNi
-Suivi pas (très) sérieux des rencontres hebdo de D et G
+Suivi (un peu plus;) sérieux des rencontres hebdo de D et G
 ## Nomenclature des fichiers :
 AAAAMMJJ-xx.ext où
 - **AAAAMMJJ** a le sens habituel,
@@ -12,3 +12,6 @@ Exemples :
 - **-**
 - **oj** pour ***o**rdre du jour* et **cr** pour ***c**ompte-**r**endu*
 - **.md** normalement, mais peut aussi être **.adoc**.
+
+## PROCÉDURE pour confirmer la présence dans un oj
+- Inscrire le nom en caractères gras
