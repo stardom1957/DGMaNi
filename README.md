@@ -13,5 +13,5 @@ Exemples :
 - **oj** pour ***o**rdre du jour* et **cr** pour ***c**ompte-**r**endu*
 - **.md** normalement, mais peut aussi être **.adoc**.
 
-## PROCÉDURE pour confirmer la présence dans un oj
+## PROCÉDURE pour confirmer la présence dans un oj | cr
 - Inscrire le nom en caractères gras
