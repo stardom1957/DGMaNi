@@ -1,0 +1,386 @@
+= Exemples d'utilisation des librairies en Python
+:version: 1.0
+:dateversion: 2022-10-18
+:datecreation: 2022-10-18
+:datemodification: 2022-10-25
+:toc:
+
+--
+Ce document décrit l'utilisation de la librairie *random* pour mes propres 
+besoins. Il n'est ni exhaustif, ni complet.
+
+Version : {version}
+
+Date    : {dateversion}
+--
+
+== Librairie random
+
+import random
+
+=== random.seed(int a)
+La méthode *seed()* permet d'utiliser *random* pour générer des suites 
+reproductibles de nombres aléatoires.
+Par exemple, random.seed(1) générera toujours la même suite de nombres aléatoires.
+
+.Exemple d'utilisation de *seed()* avec *randint()*
+....
+>>> random.seed(1)
+>>> for i in range(1,21):
+...   if i % 10 != 0:
+...     print(random.randint(1,10),end="\t")
+...   else:
+...     print(random.randint(1,10))
+... 
+3       10      2       5       2       8       8       8       7       4
+2       8       1       7       7       10      1       8       5       4
+>>> random.seed(2)
+>>> for i in range(1,21):
+...   if i % 10 != 0:
+...     print(random.randint(1,10),end="\t")
+...   else:
+...     print(random.randint(1,10))
+... 
+1       2       2       6       3       5       5       10      4       10
+1       10      3       7       7       9       6       9       8       9
+>>> random.seed(1)
+>>> for i in range(1,21):
+...   if i % 10 != 0:
+...     print(random.randint(1,10),end="\t")
+...   else:
+...     print(random.randint(1,10))
+... 
+3       10      2       5       2       8       8       8       7       4
+2       8       1       7       7       10      1       8       5       4
+>>> 
+....
+Comme on peut le voir, les séquences de nombres avec *seed(1)* et *seed(2)* sont
+différentes, mais la séquence générée avec *seed(1)* est la même que la première fois.
+
+'''
+=== random.randint(int a, int b)
+La méthode *randint(a, b)* permet de générer des entiers compris entre les valeurs des
+entiers a et b inclusivement. Avec *x=randint(a, b)*, le nombre généré sera donc *a >= x \<= b*.
+
+.Exemple d'utilisation de *randint()*
+....
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.randint(1,10),end="\t")
+...   else:
+...     print(random.randint(1,10))
+... 
+6       6       4       4       7       10      1       1       4       10
+2       7       10      6       4       4       6       7       8       8
+2       9       7       10      6       7       9       4       4       1
+3       4       3       7       10      5       3       9       8       5
+3       6       10      6       5       4       1       6       1       5
+3       2       10      4       4       7       4       8       10      10
+8       4       9       6       1       3       5       1       6       2
+10      4       1       10      3       2       4       1       10      4
+6       7       5       1       7       5       3       5       1       6
+8       3       1       4       5       5       1       2       6       8
+>>> 
+....
+Comme on peut le voir, tous les  nombres générés avec *randint(1,10)*
+se situent dans l'intervalle inclusif 1 à 10.
+
+[NOTE]
+La méthode *randint(a, b)* est semblable à *randrange(a, b)* sauf que dans *randint()* la valeur finale est incluse,
+contrairement à *randrange()* où elle est excluse.
+
+'''
+=== random.randrange(int a)
+La méthode *randrange(a)* permet de générer des entiers compris entre *0* et *a-1*.
+L'entier *a* n'est donc jamais généré par cette méthode.
+.Exemple d'utilisation de *randrange()*
+....
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.randrange(10),end="\t")
+...   else:
+...     print(random.randrange(10))
+... 
+5       2       9       6       7       6       1       9       7       7
+1       0       4       4       2       7       3       7       7       0
+8       5       2       8       4       9       6       2       9       3
+5       3       0       7       4       9       9       1       3       2
+9       0       7       0       5       7       0       3       1       7
+2       8       0       0       6       3       0       8       3       0
+6       3       6       0       5       9       4       3       0       9
+9       7       6       4       8       6       1       5       0       1
+9       2       8       3       6       3       3       8       0       9
+3       5       9       5       9       3       4       3       8       9
+>>> 
+....
+*Exemple avec a=10*
+
+On voit dans l'exemple que tous les nombres aléatoires générés se situent
+entre *0* et *a-1*.
+
+'''
+=== random.randrange(int a, int b, [int c])
+La méthode *randrange(a, b)* ou la méthode *randrange(a, b, c)* permet de
+générer des entiers compris entre *a* et *b-1*.
+L'utilisation de randrange() avec le 3e paramètre *c* permet de générer un intervalle
+espacé à l'intérieur des valeurs situées entre *a* et *b-1*.
+L'entier *a* n'est donc jamais généré par cette méthode.
+.Exemple d'utilisation de *randrange()* avec 2 paramètres
+....
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.randrange(0,10),end="\t")
+...   else:
+...     print(random.randrange(0,10))
+... 
+0       0       5       5       6       1       9       9       3       7
+2       3       5       4       7       6       5       3       7       9
+8       9       8       6       7       3       8       4       2       5
+5       6       8       2       5       0       3       4       2       8
+0       3       4       2       6       2       7       5       8       8
+0       7       9       8       4       2       0       3       7       6
+6       9       6       6       7       9       7       8       8       5
+5       8       9       0       7       9       5       5       4       4
+2       3       6       9       8       1       3       7       6       7
+7       5       7       5       2       3       7       3       2       8
+>>> 
+....
+*Exemple avec a=0 et b=10*
+
+On voit dans l'exemple que tous les nombres aléatoires générés se situent
+entre *0* et *b-1*.
+
+.Exemple 1 d'utilisation de *randrange()* avec 3 paramètres
+....
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.randrange(0,10,2),end="\t")
+...   else:
+...     print(random.randrange(0,10,2))
+... 
+2       0       6       4       6       4       0       6       4       0
+6       6       6       0       0       6       0       6       4       4
+8       0       2       4       0       2       8       8       6       6
+6       0       0       4       0       8       2       0       4       6
+6       0       6       6       8       0       2       6       6       8
+0       8       4       2       8       8       0       0       6       2
+4       8       4       6       0       6       6       6       2       6
+6       6       4       4       0       6       2       0       2       4
+6       6       0       2       2       0       6       8       4       8
+2       2       4       8       6       2       2       8       4       6
+>>> 
+....
+*Exemple avec a=0, b=10 et c=2*
+
+On voit dans l'exemple que tous les nombres aléatoires générés se situent
+entre *0* et *b-1* et que la valeur de c (*2* dans cet exemple) a espacé de *2*
+les valeurs générées.
+
+.Exemple 2 d'utilisation de *randrange()* avec 3 paramètres
+....
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.randrange(0,10,3),end="\t")
+...   else:
+...     print(random.randrange(0,10,3))
+... 
+3       0       9       0       6       3       0       3       3       3
+9       9       9       3       6       3       0       0       0       6
+6       3       0       9       6       9       6       6       6       0
+6       3       3       3       9       6       9       0       9       6
+9       6       3       0       6       9       6       9       3       0
+0       9       0       9       0       9       6       3       0       6
+6       9       6       0       3       3       3       0       9       0
+3       0       3       6       0       6       6       0       3       6
+3       9       0       9       3       6       6       6       0       9
+0       6       3       9       9       0       9       6       9       0
+>>> 
+....
+*Exemple avec a=0, b=10 et c=3*
+
+On voit dans l'exemple que tous les nombres aléatoires générés se situent
+entre *0* et *b-1* et que la valeur de c (*3* dans cet exemple) a espacé de *3*
+les valeurs générées.
+
+[NOTE]
+La méthode *randrange()* fonctionne donc comme une combinaison de la méthode *choice()* avec *range()*,
+mais sans générer l'intervalle déterminé par *range()*.
+
+'''
+=== random.choice(list a)
+La méthode *choice(a)* permet d'effectuer un choix dans une liste.
+
+.Exemple 1 d'utilisation de *choice()* avec des entiers
+....
+>>> a=[11,51,29,72,23,49,12,25,42,34]
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.choice(a),end="\t")
+...   else:
+...     print(random.choice(a))
+... 
+25      12      23      25      51      11      23      25      49      49
+51      34      12      11      11      51      11      12      51      29
+29      23      11      34      34      34      34      49      49      12
+42      51      11      25      72      12      51      11      11      12
+34      49      72      34      34      29      29      72      51      34
+34      42      23      42      42      72      25      11      25      11
+34      34      51      34      72      11      34      25      42      34
+72      72      42      72      29      29      29      29      23      29
+34      23      25      51      49      49      29      72      11      42
+49      12      49      51      29      72      42      11      25      42
+>>> 
+....
+*Exemple avec a=[11,51,29,72,23,49,12,25,42,34]*
+
+On voit dans l'exemple 1 que tous les nombres aléatoires générés proviennent
+de la liste fournie.
+
+.Exemple 2 d'utilisation de *choice()* avec des chaînes de caractères
+....
+>>> a=["ab","wc","xz","pq","ba"]
+>>> for i in range(1,101):
+...   if i % 10 != 0:
+...     print(random.choice(a),end="\t")
+...   else:
+...     print(random.choice(a))
+... 
+ba      wc      ab      xz      ba      xz      xz      pq      ab      wc
+ab      xz      ab      ba      ba      ab      wc      pq      xz      pq
+ba      xz      ba      ab      wc      xz      ab      ba      pq      wc
+ab      xz      pq      ab      wc      xz      ba      ab      wc      xz
+pq      pq      wc      ab      pq      wc      pq      wc      xz      xz
+ba      pq      pq      ba      pq      wc      xz      pq      ab      ba
+ba      ba      wc      pq      wc      xz      wc      ba      wc      xz
+wc      xz      pq      wc      wc      pq      ab      pq      ba      pq
+pq      ab      ba      wc      xz      pq      wc      pq      pq      ab
+ab      xz      pq      wc      wc      ba      xz      xz      xz      ba
+>>> 
+....
+*Exemple avec a=["ab","wc","xz","pq","ba"]*
+
+On voit dans l'exemple 2 que tous les éléments aléatoires générés proviennent
+de la liste fournie.
+
+'''
+=== random.shuffle(list a)
+La méthode *shuffle(a)* permet de réaranger aléatoirement les éléments d'une liste.
+
+.Exemple d'utilisation de *shuffle()*
+....
+>>> a=[1,5,3,7,4,2,6]
+>>> for i in range(1,10):
+...   random.shuffle(a)
+...   print(a)
+... 
+[5, 1, 4, 7, 6, 3, 2]
+[4, 2, 7, 6, 3, 5, 1]
+[5, 2, 4, 1, 3, 6, 7]
+[4, 3, 1, 5, 7, 6, 2]
+[5, 2, 1, 4, 7, 6, 3]
+[7, 6, 3, 4, 5, 2, 1]
+[6, 4, 3, 2, 5, 1, 7]
+[4, 1, 5, 2, 7, 3, 6]
+[7, 6, 3, 5, 1, 2, 4]
+>>> 
+....
+*Exemple avec a=[1,5,3,7,4,2,6]*
+
+On voit dans l'exemple que tous les éléments de la liste fournie sont
+déplacés aléatoirement à chaque itération de la boucle.
+
+'''
+=== random.sample(list a, int b)
+La méthode *sample(a, b)* permet d'obtenir un sous-liste de *b* éléments à partir d'une liste complète.
+
+.Exemple d'utilisation de *sample()*
+....
+>>> a=[1,5,3,7,4,2,6]
+>>> for i in range(1,10):
+...   print(random.sample(a,3))
+... 
+[5, 1, 6]
+[6, 7, 1]
+[1, 2, 6]
+[6, 4, 7]
+[4, 3, 1]
+[3, 1, 5]
+[4, 1, 7]
+[2, 5, 7]
+[6, 2, 7]
+>>> 
+....
+*Exemple avec a=[1,5,3,7,4,2,6] et b=3*
+
+On voit dans l'exemple qu'une sous-liste de *3* éléments de la liste fournie sont
+sélectionnés aléatoirement à chaque itération de la boucle.
+
+'''
+=== random.random()
+La méthode *random()* génère un nombre réel entre 0.0 et 1.0.
+
+.Exemple d'utilisation de *random()*
+....
+>>> for i in range(1,49):
+...   if i % 4 != 0:
+...     print(random.random(),end="\t")
+...   else:
+...     print(random.random())
+... 
+0.25256010881265667     0.8145886330915467      0.618467575629818       0.1514366747000906
+0.8785720295506014      0.7046426963435828      0.45009761333952114     0.5280846961799058
+0.6714742638621075      0.85042160447854        0.5194288375400881      0.2971552983217276
+0.9002930748832364      0.5435919397895077      0.2674986823858806      0.7731238612635692
+0.0958490915339889      0.6056218589659217      0.16205140219474357     0.37463598618120664
+0.9277259234648259      0.0666933726447273      0.9362584834032255      0.5015497193880065
+0.4473922717301029      0.27959800768938936     0.42085850184259        0.4424629739806053
+0.23921575630411784     0.021519941782286445    0.6105168459666669      0.36729605561356415
+0.9167230786498288      0.5039245351484852      0.4478324050334366      0.2866331528821676
+0.20669055208200326     0.20819620442442188     0.19068387281247912     0.8066149632990014
+0.6452262518860332      0.9390051486171316      0.8607427922737689      0.022040016298106258
+0.826947268347674       0.8350675790016137      0.1452293757169274      0.8153613058728835
+>>> 
+....
+*Exemple*
+
+On voit dans l'exemple que des nombres réels sont aléatoirement générés à chaque itération de la boucle.
+
+'''
+=== random.uniform(float a, float b)
+La méthode *uniform()* génère un nombre réel entre *a* et *b* inclusivement.
+
+.Exemple 1 d'utilisation de *uniform()* avec a \<= b
+....
+>>> for i in range(1,21):
+...   if i % 4 != 0:
+...     print(random.uniform(1,10),end="\t")
+...   else:
+...     print(random.uniform(1,10))
+... 
+9.441585116040839       4.510544848923788       5.536966305212672       1.1548017705091151
+6.50915524992789        4.620922417172077       3.5321654391500115      2.4126876503801125
+8.717830687386291       8.300251557554658       6.070064820679303       2.2162882689525243
+4.863163731375844       3.398819059655782       1.8676459233411373      4.413103389663154
+5.928638682474555       9.230001754623196       8.539234751343663       5.808970394436184
+....
+.Exemple 2 d'utilisation de *uniform()* avec a >= b
+....
+>>> for i in range(1,21):
+...   if i % 4 != 0:
+...     print(random.uniform(10,1),end="\t")
+...   else:
+...     print(random.uniform(10,1))
+... 
+3.0884393537821326      5.207316263677448       9.412095073393086       9.636395918115063
+8.802846889739877       8.501027046152279       5.1561213439947835      7.587910504400391
+7.0098986968258075      5.447003650887387       7.702378963582428       6.950335770379253
+8.974783788465428       7.883294397542042       1.5040459078860078      2.9841413901093077
+3.5640222431318023      5.600864595039832       4.78038648545344        3.0677215610558175
+>>> 
+....
+*Exemple*
+
+On voit dans les exemples que des nombres réels sont aléatoirement générés à chaque itération de la boucle.
+De plus, les valeurs *a* et *b* détermine les limites inférieurs et supérieures, avec *a \<= b* ou avec *a >=b*.
+
+'''

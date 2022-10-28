@@ -1,0 +1,113 @@
+= La librairie OS
+:version: 1.1
+:dateversion: 2022-10-26
+:datecreation: 2022-10-25
+:datemodification: 2022-10-26
+:toc:
+
+====
+Ce document décrit l'utilisation de la librairie *os* pour mes propres besoins.
+
+Il n'est ni exhaustif, ni complet.
+====
+
+Version : {version}
+
+Date    : {dateversion}
+
+== Librairie os
+
+>>> import os
+
+=== getcwd()
+
+*Obtention du répertoire courant*
+....
+>>> rep_courant=os.getcwd()
+>>> rep_courant
+'/home/guy/progs/dev/python/atelier'
+....
+
+=== listdir(_**str**_ rep)
+*Obtention du contenu du répertoire courant*
+....
+>>> os.listdir(rep_courant)
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py', '__init__.py', 'prem.py', 'README.adoc', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+
+>>> os.listdir('.')
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py', '__init__.py', 'prem.py', 'README.adoc', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+....
+
+*Obtention du contenu d'un autre répertoire*
+....
+>>> os.listdir('/tmp/')
+['systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-systemd-oomd.service-OxVFQr', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-switcheroo-control.service-pGd6vr', 'python-languageserver-cancellation', '.Test-unix', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-power-profiles-daemon.service-8QD1M1', 'pyright-4039-aMrxf6d2Ep9R', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-bluetooth.service-WtiAyQ', 'pyright-82274-48rC1pPRn5dd', 'pyright-78897-2rmE38IUs4og', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-apache2.service-h9xG4T', '.XIM-unix', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-systemd-logind.service-Nrl7nZ', '.X1-lock', '.ICE-unix', 'tracker-extract-3-files.1000', '.X11-unix', 'pyright-82274-reQrOWnV71fq', '.X0-lock', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-systemd-resolved.service-96vNvl', 'snap.snap-store', 'pyright-80074-DKDqzxR5GBIQ', 'snap.snapd-desktop-integration', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-ModemManager.service-4yuOG5', 'pyright-6143-CEjascrl1CRG', 'snap.discord', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-upower.service-jJBAAI', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-systemd-timesyncd.service-EVyR5u', '.com.google.Chrome.YemJ7z', '.font-unix', 'pyright-77799-T2j2030N0SRz', 'systemd-private-bd736e5d9e794a5fa1e7fa0bbe3626d2-colord.service-5OSY9W']
+>>> 
+....
+
+=== mkdir(_**str**_ rep)
+*Création d'un autre nouveau répertoire dans le répertoire courant*
+....
+>>> os.listdir('.')
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'Librairies_python_os.adoc', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py',  '__init__.py', 'prem.py', 'README.adoc', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+>>> os.mkdir('AUTRE_REP')
+>>> os.listdir('.')
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'Librairies_python_os.adoc', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py',  '__init__.py', 'prem.py', 'README.adoc', 'AUTRE_REP', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+>>> 
+....
+
+=== makedirs(_**str**_ rep)
+*Création d'un nouveau répertoire dans le répertoire courant*
+....
+>>> os.listdir()
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'Librairies_python_os.adoc', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py', '__init__.py', 'prem.py', 'README.adoc', 'AUTRE_REP', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+
+>>> os.makedirs('NOUV_REP')
+>>> os.listdir()
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'Librairies_python_os.adoc', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py', 'NOUV_REP', '__init__.py', 'prem.py', 'README.adoc', 'AUTRE_REP', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+>>> 
+....
+*On voit que le répertoire NOUV_REP a été créé*
+
+*Exemple de création de plusieurs niveaux de sous-répertoires avec makedirs (mkdir ne permet pas ça!)*
+....
+>>> os.makedirs('NOUV_REP/NOUVEAU/REP')
+>>> os.listdir('.')
+['bonjour.py', 'hello', 'classeTest_1_2.py', '.git', 'arguments.py', 'Librairies_python_os.adoc', 'gen_alea.py', 'random.adoc', 'classeTest_1_0.py', 'dictionary.adoc', 'test.txt', 'test2.txt', 'fibo.py', 'NOUV_REP', '__init__.py', 'prem.py', 'README.adoc', 'AUTRE_REP', 'Librairies_python.adoc', 'ExemplesFichiers.adoc', 'test3.txt', 'classeTest_1_1.py', 'primes_GN.py', '.gitignore', 'recur.py', '__pycache__']
+>>> os.listdir('./NOUV_REP')
+['NOUVEAU']
+>>> os.listdir('./NOUV_REP/NOUVEAU')
+['REP']
+>>> 
+....
+*On voit que le sous-répertoire REP a été créé dans le nouveau sous-répertoire NOUVEAU qui se situe dans sous-répertoire NOUV_REP créé précédemment*
+
+=== stat(_**str**_ nom)
+*Fonctions pour obtenir des informations sur un fichier ou un répertoire*
+....
+>>> stats=os.stat('bonjour.py')
+>>> stats
+os.stat_result(st_mode=33204, st_ino=96078400, st_dev=2053, st_nlink=1, st_uid=1000, st_gid=1000, st_size=192, st_atime=1665673009, st_mtime=1665019755, st_ctime=1665019755)
+>>> stats.st_size
+192
+>>> stats.st_ctime
+1665019755.341417
+>>> stats.st_mtime
+1665019755.3174171
+>>> stats.st_atime
+1665673009.6229973
+>>> 
+....
+
+*Pour rendre les dates plus compréhensibles, utiliser _fromtimestamp_*
+....
+>>> from datetime import datetime
+>>> datetime.fromtimestamp(stats.st_ctime)
+datetime.datetime(2022, 10, 5, 21, 29, 15, 341417)
+>>> datetime.fromtimestamp(stats.st_mtime)
+datetime.datetime(2022, 10, 5, 21, 29, 15, 317417)
+>>> datetime.fromtimestamp(stats.st_atime)
+datetime.datetime(2022, 10, 13, 10, 56, 49, 622997)
+>>> 
+....
+

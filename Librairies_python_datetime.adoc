@@ -1,0 +1,248 @@
+= La librairie datetime (qui contient date et time)
+:version: 1.0
+:dateversion: 2022-10-25
+:datecreation: 2022-10-25
+:datemodification: 2022-10-26
+:toc:
+
+====
+Ce document décrit l'utilisation de la librairie *datetime* pour mes propres besoins.
+
+Il n'est ni exhaustif, ni complet.
+====
+
+Version : {version}
+
+Date    : {dateversion}
+
+----
+>>> from datetime import date
+>>> from datetime import datetime
+>>> from datetime import timedelta
+----
+=== date(_**int**_ a, _**int**_ m, _**int**_ j)
+*La date est validée automatiquement*
+----
+>>> a=date(2022,2,28)
+>>> a
+datetime.date(2022, 2, 28)
+>>> a=date(2022,2,29)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: day is out of range for month
+>>> a=date(2022,2,27)
+>>> a=date(2022,2,30)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: day is out of range for month
+>>> a=date(2022,11,30)
+>>> a=date(2022,11,31)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+ValueError: day is out of range for month
+----
+
+=== today()
+*On peut utiliser la méthode today() pour obtenir la date du jour*
+----
+>>> a.today()
+datetime.date(2022, 10, 25)
+>>> a
+datetime.date(2022, 11, 30)
+>>> 
+>>> auj=date.today()
+>>> auj
+datetime.date(2022, 10, 25)
+----
+
+=== fromordinal(_**int**_ valeur)
+*Obtention d'une date à partir de la valeur ordinale du calendrier Grégorien idéal*
+----
+Note : Dans ce calendrier, le 1er janvier de l'an 1 porte le numéro 1
+>>> a.fromordinal(738453)
+datetime.date(2022, 10, 25)
+----
+
+=== fromtimestamp(_**float**_ valeur)
+*On peut utiliser _fromtimestamp_ Pour rendre les dates plus compréhensibles*
+----
+>>> stats.st_ctime
+1665019755.341417
+>>> datetime.fromtimestamp(stats.st_ctime)
+datetime.datetime(2022, 10, 5, 21, 29, 15, 341417)
+>>> 
+----
+
+=== fromisoformat(_**str**_ d)
+*Permet d'entrer une date sous forme de chaîne de caractères*
+----
+>>> a=date.fromisoformat("2022-10-24")
+>>> a
+datetime.date(2022, 10, 24)
+>>> 
+>>> b="2022-10-23"
+>>> b
+'2022-10-23'
+>>> a=date.fromisoformat(b)
+>>> a
+datetime.date(2022, 10, 23)
+>>> 
+----
+
+=== isoformat(_**int**_ a, _**int**_ m, _**int**_ j)
+*On peut aussi faire l'opération inverse*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> a.isoformat()
+'2022-10-23'
+----
+
+=== isocalendar(_**int**_ a, _**int**_ sem, _**int**_ jsem)
+*On peut aussi fonctionner avec le mode calendrier an, sem, joursem*
+----
+>>> a.isocalendar()
+datetime.IsoCalendarDate(year=2022, week=42, weekday=7)
+>>> b
+'2022-10-23'
+>>> b=date.fromisocalendar(2022,42,6)
+>>> b
+datetime.date(2022, 10, 22)
+>>> 
+----
+
+=== timedelta([_**int**_ j], [_**int**_ sec], [_**int**_ us], [_**int**_ ms], [_**int**_ min], [_**int**_ h], [_**int**_ sem])
+*On peut effectuer des calculs de date avec timedelta*
+----
+>>> a=date.today()
+>>> a
+datetime.date(2022, 10, 26)
+>>> a+timedelta(10)            # Calcul de la date actuelle plus 10 jours
+datetime.date(2022, 11, 5)
+>>> a-timedelta(10)            # Calcul de la date actuelle moins 10 jours
+datetime.date(2022, 10, 16)
+>>> a+timedelta(weeks=7)       # Calcul de la date actuelle plus 7 semaines
+datetime.date(2022, 12, 14)
+>>> a+timedelta(0,0,0,0,0,0,7) # Calcul de la date actuelle plus 7 semaines
+datetime.date(2022, 12, 14)
+>>>
+----
+
+=== weekday()
+*On peut obtenir le jour de la semaine*
+----
+Avec weekday(), lundi=0
+
+>>> a
+datetime.date(2022, 10, 23)
+>>> a.weekday()
+6
+
+=== isoweekday()
+Avec isoweekday(), lundi=1
+>>> a.isoweekday()
+7
+>>> 
+----
+
+*On peut convertir rapidement la date en chaîne*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> a.__str__()
+'2022-10-23'
+>>> str(a)
+'2022-10-23'
+>>> 
+----
+
+=== ctime()
+*Affichage de la date dans un format texte*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> a.ctime()
+'Sun Oct 23 00:00:00 2022'
+>>> 
+----
+
+=== strftime()
+*Affichage la date en divers formats*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> a.strftime("%y/%m/%d")
+'22/10/23'
+>>> a.strftime("%y-%m-%d")
+'22-10-23'
+>>> a.strftime("%y:%m:%d")
+'22:10:23'
+>>> a.strftime("%y--:%m--%d")
+'22--:10--23'
+>>> a.strftime("%y--%m--%d")
+'22--10--23'
+>>> a.strftime("%A %d. %B %Y")
+'Sunday 23. October 2022'
+>>> a.strftime("%D %B %Y, %A")
+'10/23/22 October 2022, Sunday'
+>>> a.strftime("%d %B %Y, %A")
+'23 October 2022, Sunday'
+>>> a.strftime("%d %b %y, %a")
+'23 Oct 22, Sun'
+>>> 
+----
+
+=== timetuple()
+*Obtention d'un tuple avec les infos de datetime*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> t=a.timetuple()
+>>> t
+time.struct_time(tm_year=2022, tm_mon=10, tm_mday=23, tm_hour=0, tm_min=0, tm_sec=0, tm_wday=6, tm_yday=296, tm_isdst=-1)
+>>> for i in t:
+...   i
+... 
+2022
+10
+23
+0
+0
+0
+6
+296
+-1
+>>> 
+----
+
+=== now()
+*Pour obtenir la date et l'heure actuelles*
+----
+>>> datetime.now()
+datetime.datetime(2022, 10, 25, 20, 57, 36, 516666)
+>>> datetime.utcnow()
+datetime.datetime(2022, 10, 26, 0, 57, 37, 756399)
+>>> 
+----
+
+=== combine(_**date**_ d, _**time**_ h)
+*Combinaison de date et time pour faire un datetime*
+----
+>>> a
+datetime.date(2022, 10, 23)
+>>> h
+datetime.time(20, 5, 3)
+>>> c=datetime.combine(a,h)
+>>> c
+datetime.datetime(2022, 10, 23, 20, 5, 3)
+>>> 
+----
+
+=== strptime(_**str**_ dt, _**str**_ format)
+*Conversion d'une chaîne contenant un datetime*
+----
+>>> datetime.strptime("2022-10-27 16:45:23","%Y-%m-%d %H:%M:%S")
+datetime.datetime(2022, 10, 27, 16, 45, 23)
+>>> 
+----
+
