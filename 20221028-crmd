@@ -1,0 +1,39 @@
+# Compte-rendu de la rencontre du 2022-10-21
+## Par Guy Nicol
+Lieu :    Chez Guy 🌲🏠🌳  
+Horaire : À partir de 13h30 🕜  
+## Présences
+* **Dominique Martel (D)**
+* **Guy Nicol (G)**
+
+## Ordre du jour
+1. Événements de la semaine précédente  
+  1.1  Activités diverses  
+  1.2  Acquisitions  
+  1.3 Informatique  
+    1.3.1 Programmation  
+      1.3.1.1 Python  
+               - Poursuite de la lecture (et expérimentation) de **Python in 24 hours**  
+               - Début du projet de documentation des librairies Python (en AsciiDoc)  
+               - Début du projet Pyramide (classes, etc.)  
+               *G a créé une classe Coord et une classe Lignes*
+               *Ces classes serviront pour générer les motifs affichés sur les murs des chambres de la pyramide*  
+               *Plusieurs autres classes sont à venir (Motifs, Murs, Chambres, Etages, etc.)*  
+               - Documentation **inline** et **docstrings**  
+               *D utilise déjà les **docstrings** pour générer sa documentation avec copydoc(?)*  
+               - Proposition de mise en commun de documents de référence ***maison***  
+               *Pour l'instant c'est surtout G qui rendra disponible les exemples concernant les librairies Python*  
+    1.3.2 git et gitHub<br>
+      1.3.2.1 Expérimentation avec l'ajout du fichier primes_GN.py dans **dev/python**  
+      *D et G doivent lire davantage au sujet des **Pulls Requests** avant qu'on puisse poursuivre l'expérimentation*  
+  1.4 Robotique  
+  1.5 Autres  
+2. DGMaNi  
+3. Varia  
+
+
+
+Breuvages disponibles :
+  * Scotch Johnnie Walker Double Black
+  * Bourbon Maker's Mark
+  * Eau et autres diluants si nécessaire
