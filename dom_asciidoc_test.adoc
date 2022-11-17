@@ -1,0 +1,30 @@
+= Titre du document
+
+Ce document contient divers exercices pour l'écriture de texte au format asciidoc.
+
+== Formatage simples de texte
+*gras simple*  et **gras double**
+
+_italique simple_ et __italique double__
+
+`monospace simple` et ``monospace double``
+
+== Titre de la section 1
+Dans le module doublesoutils du package astrodm de D (astrodm/doublesoutils.py), la fonction de recherche rech_wds dans le catalogue des étoiles doubles WDS (Washington Double Stars) retournait des résultats incorrects pour certaines recherches. Par exemple, une recherche pour stfa58 retournait les résultats pour les systèmes stfa58 et stf58. Le code pour les recherches dans les notes du WDS (/B/wds/notes) à également été corrigé pour rendre les résultats plus fiables. Sans entrer dans les détails, nous avons discuté des solutions dans le code corrigé.
+
+== Titre de la section 2
+Contenu section 2
+
+== Titre de la section 3
+Au fur et à mesure des activités (planification, repérage, acquisition des données, pré-réduction et post-réduction), le suivi est effectué à l'aide des scripts de ma librairie astrodm. Certains de ces scripts colligent les données qui se trouvent dans la structure de répertoires située dans les dossiers de données (med, en local sur l'ordinateur de l'auteur). Ce sont ces données qui sont présentées dans des listes, généralement au format texte.
+
+== Section 4
+
+=== Sous-section 4.1
+=== Sous-section 4.2
+==== 4.2.1
+
+== Liste non numérotée
+* élément 1
+* élément 2
+* élément 3
