@@ -9,8 +9,8 @@ Horaire : À partir de 13h30 🕜
 1. Événements de la semaine précédente  
   1.1.  Activités diverses  
   1.2.  Acquisitions  
-  1.3 Informatique
-    1.3.1 Programmation
+  1.3 Informatique<br>
+    1.3.1 Programmation<br>
       1.3.1.1 Python  
     1.3.2 git et gitHub 
       1.3.2.1 SUIVI de Les séquences LaTEx ne semblent pas être interprétée nomrmalement : par ex. $\sigma$ devrait donner la lettre grecque sigma!  
