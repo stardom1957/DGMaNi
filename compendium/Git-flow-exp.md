@@ -71,5 +71,20 @@ Requesting a code review from you
   
   **\* Note** : cette branche patch-1 **est** un pr qui provient de GuyNicol, donc en effet, il n'y a pas de pr créé par moi pour cette branche !  
 
-### Examiner et tester les changements proposés
-Puisque j'ai le code en ma possession, il m'est maintenant possible de tester le code dans la branche patch-1 dans mon propre environnement de développement. Par la suite, je peux aller dans mon github repo pour commenter et peut être demander des changements à l'initiateur du pr.  Dans ce cas, je choisi de retourner dans GitHub pour congratuler G pour son travail, approuver et fusionner (merge) le pr dans main et fermer le pr.  
+## 3.0 Examiner et tester les changements proposés
+Il m'est maintenant possible de tester le code dans la branche patch-1 dans mon propre environnement de développement. Par la suite, je pourrais aller dans mon remote repo pour commenter et peut être demander des changements à l'initiateur du pr. Cependant, puisque je suis déjà très satisfait des changements proposés, je choisi de retourner dans mon remote repo pour congratuler G pour son travail, approuver et fusionner (merge) le pr dans main et fermer le pr.  
+
+### 3.1 Dans le remote repo, approuver, fusionner et fermer le pr
+... TODO : à documenter  
+
+## 4.0 Tirer les changements du remote repo vers le repo local  
+> git checkout main  
+Switched to branch 'main'  
+
+> git pull origin main  
+From https://github.com/stardom1957/dev  
+ \* branch            main       -> FETCH_HEAD  
+Updating 6f9d2dd..05138a7  
+Fast-forward  
+ python/primes_GN.py | 62 ++++++++++++++++++++++++++++++++++++++++++-----------  
+ 1 file changed, 50 insertions(+), 12 deletions(-)  
