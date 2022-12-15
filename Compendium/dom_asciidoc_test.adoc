@@ -78,3 +78,17 @@ While werewolves are hardy community members, keep in mind the following dietary
 ====
 Dans le module doublesoutils du package astrodm de D (astrodm/doublesoutils.py), la fonction de recherche rech_wds dans le catalogue des étoiles doubles WDS (Washington Double Stars) retournait des résultats incorrects pour certaines recherches. Par exemple, une recherche pour stfa58 retournait les résultats pour les systèmes stfa58 et stf58. Le code pour les recherches dans les notes du WDS (/B/wds/notes) à également été corrigé pour rendre les résultats plus fiables. Sans entrer dans les détails, nous avons discuté des solutions dans le code corrigé.
 ====
+
+== A literal paragraph
+ Dans le module doublesoutils du package astrodm de D (astrodm/doublesoutils.py), la fonction de recherche rech_wds dans le catalogue des étoiles doubles
+ WDS (Washington Double Stars) retournait des résultats incorrects pour certaines recherches. Par exemple, une recherche pour stfa58 retournait les
+ résultats pour les systèmes stfa58 et stf58. Le code pour les recherches dans les notes du WDS (/B/wds/notes) à également été corrigé pour rendre les
+ résultats plus fiables. Sans entrer dans les détails, nous avons discuté des solutions dans le code corrigé.
+ 
+ [%hardbreaks]
+ dsdsdsd
+ sdsdsd
+ sdsd
+ 
+ 
+ 
