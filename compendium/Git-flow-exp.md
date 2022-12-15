@@ -33,7 +33,7 @@ remote: Enumerating objects: 11, done.
 remote: Counting objects: 100% (11/11), done.  
 remote: Compressing objects: 100% (6/6), done.  
 remote: Total 8 (delta 5), reused 4 (delta 2), pack-reused 0  
-Unpacking objects: 100% (8/8), 2.54 KiB | 56.00 KiB/s, done.  
+Unpacking object`s: 100% (8/8), 2.54 KiB | 56.00 KiB/s, done.  
 From https://github.com/stardom1957/dev  
  \* [new ref]         refs/pull/2/head -> patch-1  
  Switched to branch 'patch-1'  
@@ -88,3 +88,10 @@ Updating 6f9d2dd..05138a7
 Fast-forward  
  python/primes_GN.py | 62 ++++++++++++++++++++++++++++++++++++++++++-----------  
  1 file changed, 50 insertions(+), 12 deletions(-)  
+
+## En conclusion
+On voit qu'il y a des étapes qui s'effectuent en ligne et d'autres qui se tiennent localement. Pour cet exercice, avec ce que je savais, j'ai choisi la voie qui me semblait la plus simple :
+- utliser le CLI gh pour importer (tirer) le pr de mon remote repo vers mon local repo, avec le bénéfice de la création automatique de la branche patch-1  - ne pas m'engager dans le processus de commentaires et demandes de changements et de plutôt  
+- approuver les changements, fusionner (merge) et fermer le pr sur le remote repo en une seule étape  
+
+Puisque les changements ont été fusionnés en ligne, il devenait nécessaire à l'étape 4, de tirer (pull) ces changements de mon remote repo vers mon local repo.  
