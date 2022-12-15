@@ -1,0 +1,6 @@
+= À la découverte de Git Flow 2  
+== Une illustration sommaire du processus  
+
+Ce texte document sommairement le flot de travail d'un Pull Request (pr) du point de vue des deux parties impliquées :
+* l'originateur du pr, dans ce document le **requérant**
+* le propriétaire du repo sur GitHub, dans ce document le **propriétaire**
