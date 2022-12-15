@@ -15,3 +15,7 @@ Exemples :
 
 ## PROCÉDURE pour confirmer la présence dans un oj | cr
 - Inscrire le nom en caractères gras
+
+## Dossier Compendium
+- Ce dossier contient des documents qui illustrent certaines de nos expériences.  
+- Les contenus seront tirés des compte-rendus corresponandnt afin de rendre les sujets plus acceccibles.
