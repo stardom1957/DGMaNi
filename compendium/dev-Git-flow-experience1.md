@@ -92,6 +92,10 @@ Updating 6f9d2dd..05138a7
 Fast-forward  
  python/primes_GN.py | 62 ++++++++++++++++++++++++++++++++++++++++++-----------  
  1 file changed, 50 insertions(+), 12 deletions(-)  
+ 
+ Puis,
+ > git branch -D patch-1  
+Deleted branch patch-1 (was ebbb56c).  
 
 ## En conclusion
 On voit qu'il y a des étapes qui s'effectuent en ligne et d'autres qui se tiennent localement. Pour cet exercice, avec ce que je savais, j'ai choisi la voie qui me semblait la plus simple :
