@@ -20,6 +20,6 @@ Ce texte document sommairement le flot de travail d'un Pull Request (pr) du poin
 
 * local clones repo propriétaire : le repo (dossier clôné) du remote repo requérant sur l'ordinateur du requérant.
 
-image::https://github.com/stardom1957/DGMaNi/blob/main/images/github-create-fork1.png[PR1, 128, 128]
+image::https://github.com/stardom1957/DGMaNi/blob/main/images/github-create-fork1.png[PR1, 256, 256]
 
  
