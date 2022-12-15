@@ -1,6 +1,23 @@
-= À la découverte de Git Flow 2  
+= À la découverte de Git Flow 2
+
 == Une illustration sommaire du processus  
 
 Ce texte document sommairement le flot de travail d'un Pull Request (pr) du point de vue des deux parties impliquées :
-* l'originateur du pr, dans ce document le **requérant**
-* le propriétaire du repo sur GitHub, dans ce document le **propriétaire**
+
+* l'originateur du pr; dans ce document le **requérant**
+
+* le propriétaire du repo sur GitHub; dans ce document le **propriétaire**
+
+== Conventions d'écriture
+
+* pr : pull request
+
+* remote repo propriétaire : le repo GitHub du propriétaire
+
+* local repo propriétaire : le repo (dossier source) sur l'ordinateur du propriétaire.
+
+* forked remote repo requérant : le repo GitHub du requérant
+
+* local clones repo propriétaire : le repo (dossier clôné) du remote repo requérant sur l'ordinateur du requérant.
+
+ 
