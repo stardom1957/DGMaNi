@@ -1,7 +1,11 @@
-# Git Flow - dans dev
-« Code Review process »
+# À la découverte de Git Flow
+## Un exemples dans dev
+« Code Review process » de la part du propriétaire du repo GitHub.
 
-**Note : toutes les opérations ont été effectuées sur l'ordinateur du propriétaire dans le répertoire source (dev), au terminal, avec diverses commandes qui exploitent le CLI gh.**  
+Notes :  
+* Certaines des opérations de revue du pr mentionné plus bas ont été effectuées sur l'ordinateur du propriétaire dans le répertoire source (dev), au terminal, avec diverses commandes qui exploitent le CLI gh, alors que d'autres ont été exécutées sur GitHub, toujours dans le repo du propriétaire. Il s'agit bien sûr d'une manière de faire et nous sommes conscient qu'il y en a bien d'autres.  
+* Pour garder les choses simples, le propriétaire ne s'est pas engagé dans le processus de commentaires et demandes de changements au code proposé dans ce pr, donc toutes les opérations illustrées plus bas ont été effectuées par le propriétaire du repo dev sans aucune intervention de la part de l'initiateur du pr (G).  
+* Ainsi, dans cet exercice, le rôle de G a été d'initier le pr en passant par un « fork » du repo, avec création automatique de la branche **patch-1**. Dans cet pr, c'est cette branche qui est examinée plus bas.  
 
 ## 1.0 Lister et identifier le Pull Request (pr)
 ### 1.1 Dans le répertoire dev, au terminal :  
