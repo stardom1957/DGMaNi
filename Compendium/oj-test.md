@@ -24,6 +24,6 @@ Horaire : À partir de 13h30 🕜
 4. Varia  
 
 Breuvages disponibles :
-  * Scotch Té Bheag
+  * Scotch Té Bheag 🀄
   * Bourbon Maker's Mark
   * Eau et autres diluants si nécessaire
