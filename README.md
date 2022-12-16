@@ -18,4 +18,7 @@ Exemples :
 
 ## Dossier Compendium
 - Ce dossier contient des documents qui illustrent certaines de nos expériences.  
-- Les contenus seront tirés des compte-rendus corresponandnt afin de rendre les sujets plus acceccibles.
+- Les contenus seront tirés des compte-rendus corresponandnt afin de rendre les sujets plus acceccibles.  
+
+## Quelques conventions d'écriture
+* Afin d'attirer l'attention, certains mots clés peuvent être inscrits en majuscules : SUIVI, PROPOSITION, PROCÉDURE, etc
