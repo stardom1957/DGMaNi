@@ -54,7 +54,8 @@ Figure 1 - La commande de création d'un fork sur repo original dans GitHub.
 
   --> CLIQUER sur + Create a new fork 
   et SUIVRE les indications
-Note :
+
+Notes :
 * Par défaut le nom du et la description du fork sont les mêmes que le repo original.
 
 * Par défaut seule la branche main est copiée
@@ -68,7 +69,7 @@ Figure 2 - Copier seulement la branche main.
 image::../images/github_btn_create_fork.png[][Figure 3]
 Figure 3 - Bouton de création du fork.
 
-Le fork est créé dans 
+Le fork est créé dans le compte du requérant.
 
 == Étape 2 - Clôner le repo
 
