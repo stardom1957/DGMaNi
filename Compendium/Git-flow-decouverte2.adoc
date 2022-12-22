@@ -32,25 +32,25 @@ Ce texte document sommairement le flot de travail d'un Pull Request (pr) du poin
 
 * forked repo&#160;: le repo GitHub « forked » à partir du repo original et situé sur le GitHub du requérant.
 
-* répertoir local clone&#160;: le répertoire obtenu par clônage du forked repo requérant situé sur l'ordinateur du requérant.
+* répertoire local clone&#160;: le répertoire obtenu par clônage du forked repo requérant situé sur l'ordinateur du requérant.
 
-== Sommaire du processus
-Le processus se décline de la manière suivante&#160;:
+== Sommaire du processus du « Pull request »
+En ce qui concerne le *requérant*, le processus se décline de la manière suivante&#160;:
 
-1. Créer un fork du repo propriétaire
-2. Clôner le repo requérant
-3. Créer une nouvelle branche
+1. Créer un fork du repo original dans GitHub
+2. Obtenir une copie locale du fork (clône)
+3. Créer une nouvelle branche dans la copie locale
 4. Effectuer les changements dans la nouvelle branche
 5. Pousser les changements vers le fork
 6. Créer le pr
 
 == Étape 1 - créer un fork à partir du repo original
-À titre d'exemple, supposons que Le *requérant* désire proposer des changements dans *dev*, le *repo original*. Bien entendu, le requérant n'est pas autorisé à modifier directement le code dans le repo original; il devra donc obteni sa propre copie du repo en créant un « fork » à partir de ce dernier. La procédure fork produit une copie conforme du  *repo original* dans le compte GitHub du requérant. Puisque le fork constitue en lui-même un repo, il contient tout l'historique des commandes _git_ et autres du repo.
+À titre d'exemple, supposons que Le *requérant* désire proposer des changements dans *dev*, le *repo original*. Puisque le requérant n'est pas autorisé à modifier directement le code dans le repo original, il devra obtenir sa propre copie du repo en créant un « fork » à partir de ce dernier. La procédure fork produit une copie conforme du  *repo original* dans le compte GitHub du requérant. Puisque le fork constitue en lui-même un repo, il contient tout l'historique des commandes _git_ et autres du repo.
 
-Le figure 1 indique comment lancer la procédure fork à partir du repo original dans GitHub.
+La figure 1 montre la boîte de dialogue qui permet de  lancer la procédure fork à partir du repo original dans GitHub.
 
 image::../images/github-create-fork1.png[Figure 1]
-Figure 1 - La commande de création d'un fork sur repo original dans GitHub.
+Figure 1 - Création d'un fork dans GitHub.
 
   --> CLIQUER sur + Create a new fork 
   et SUIVRE les indications
