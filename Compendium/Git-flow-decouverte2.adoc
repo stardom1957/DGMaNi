@@ -1,18 +1,16 @@
-= À la découverte de Git Flow 2
+= À la découverte de Git Flow 2 - création d'un « Pull request »
+:toc: auto
+:toc-title: Table des matières
 :author: par Dominique Martel
 :description: Une illustration du processus GitFlow pour un Pull Request liée à la révision de code.
-
 :keywords: tutoriel, GitFlow, révision, code, collaboration
 
-:toc:
-:toc-title: Table des matières
 == Introduction
-
 Ce texte document sommairement le flot de travail d'un Pull Request (pr) du point de vue des deux parties impliquées :
 
-* l'originateur du pr; dans ce document le **requérant**
+* l'originateur du pr; dans ce document, le **requérant**
 
-* le propriétaire du repo sur GitHub; dans ce document le **propriétaire**
+* le propriétaire du repo sur GitHub; dans ce document, le **propriétaire**
 
 == Conventions d'écriture et abbréviations
 
@@ -76,8 +74,11 @@ Le fork est créé dans le compte du requérant.
 Bien entendu le requérant peut dès maintenant effectuer des modification dans son fork, mais dans cet exemple
 
 == Étape 3
+
 == Étape 4
+
 == Étape 5
+
 == Étape 6
 
  
