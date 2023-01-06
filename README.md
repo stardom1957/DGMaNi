@@ -16,9 +16,16 @@ Exemples :
 ## PROCÉDURE pour confirmer la présence dans un oj | cr
 - Inscrire le nom en caractères gras
 
+## PROCÉDURE pour reporter une rencontre déjà planifiée
+- Utiliser le \~\~ pour barrer le titre et indiquer les détails du report sur la ligne suivante
+
+Exemple :
+# ~~Ordre du jour de la rencontre du 2022-10-21~~  
+Rencontre reportée au 2022-10-28 en raison de la tempête solaire!  
+
 ## Dossier Compendium
 - Ce dossier contient des documents qui illustrent certaines de nos expériences.  
-- Les contenus seront tirés des compte-rendus corresponandnt afin de rendre les sujets plus acceccibles.  
+- Les contenus seront tirés des compte-rendus correspondant afin de rendre les sujets plus acceccibles.  
 
 ## Quelques conventions d'écriture
 * Afin d'attirer l'attention, certains mots clés peuvent être inscrits en majuscules : SUIVI, PROPOSITION, PROCÉDURE, etc
