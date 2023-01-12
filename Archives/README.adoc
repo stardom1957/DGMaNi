@@ -1,4 +1,6 @@
 = Dossier d'archives des documents d'ordre-du-jour -oj et compte-rendus -cr de nos rencontres
+:icons: font
+
 
 Les documents de plus de deux mois (du mois courant) sont déplacés ici gratuitement par des bénévoles
 durant leurs temps libres!
