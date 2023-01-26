@@ -1,12 +1,14 @@
 = À la découverte de Git Flow 2 - création d'un « Pull request »
 :toc: auto
 :toc-title: Table des matières
-:author: par Dominique Martel
+:author: Dominique Martel
 :description: Une illustration du processus GitFlow pour un Pull Request liée à la révision de code.
 :keywords: tutoriel, GitFlow, révision, code, collaboration
 
 == Introduction
 Ce texte document sommairement le flot de travail d'un Pull Request (pr) du point de vue des deux parties impliquées :
+
+:telescope: 
 
 * l'originateur du pr; dans ce document, le **requérant**
 
