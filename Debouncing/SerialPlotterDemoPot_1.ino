@@ -11,11 +11,11 @@ void setup() {
 }
 
 void loop() {
-  pot = analogRead(A1);
+  pot = analogRead(A1); // A1 est connecté à la partie centrale du pot (ou à la pin 1 du 7414)
   while ((pot >= ancien_pot+tolerance) or (pot <= ancien_pot-tolerance)) {  // Si changement
-    sortieST= analogRead(A2);
-    valPot = float(pot*5)/1024; // Conversion en volts pour l'affichage
-    valSortieST = float(sortieST*5)/1024; // Conversion en volts pour l'affichage
+    sortieST= analogRead(A2); //A2 est connecté à la pin 2 du 7414
+    valPot = float(pot*5)/1023; // Conversion en volts pour l'affichage
+    valSortieST = float(sortieST*5)/1023; // Conversion en volts pour l'affichage
 
     Serial.print("Pot:");
     Serial.println(valPot);
