@@ -18,9 +18,9 @@ void loop() {
   while ((inter >= ancien_inter+tolerance) or (inter <= ancien_inter-tolerance)) {  // Si changement
     sortieST1= analogRead(A3); //A3 est branché à la pin 4 du 7414
     sortieST2= analogRead(A2); //A2 est branché à la pin 2 du 7414
-    valInter = float(inter*5)/1024; // Conversion en volts pour l'affichage
-    valSortieST1 = 5-float(sortieST1*5)/1024; // Conversion en volts pour l'affichage
-    valSortieST2 = float(sortieST2*5)/1024; // Conversion en volts pour l'affichage
+    valInter = float(inter*5)/1023; // Conversion en volts pour l'affichage
+    valSortieST1 = 5-float(sortieST1*5)/1023; // Conversion en volts pour l'affichage (et inversion)
+    valSortieST2 = float(sortieST2*5)/1023; // Conversion en volts pour l'affichage
 
     Serial.print("inter:");
     Serial.println(valInter);
