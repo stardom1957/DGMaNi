@@ -25,5 +25,7 @@ Note de G, j'ai le livre en main, D me l'a donc remis, même si ce n'est pas ind
 2023-09-08  
 - Offre console Nitendo Switch (D)  
 ---
-
+2024-03-01
+- Retour d'un 74HC14N de (D) à (G)
+- 
 **Il faudra déterminer et adopter un format pour rendre ça plus facilement lisible.**
