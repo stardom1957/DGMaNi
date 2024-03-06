@@ -8,7 +8,7 @@
 ---
 2022-12-02  
 - D emprunte Apollo, mission meurtrière (C. Hadfield)  
-- D Emprunte le manuel « The Python 3 Standard Library by Example »  
+- D Emprunte le manuel «The Python 3 Standard Library by Example»  
 Note de G, j'ai le livre en main, D me l'a donc remis, même si ce n'est pas indiqué dans DGMaNi  
 2023-03-10  
 - (G) Achat de 10 x 74HC14N chez Addison (Montréal) le 2023-02-11  
@@ -27,5 +27,7 @@ Note de G, j'ai le livre en main, D me l'a donc remis, même si ce n'est pas ind
 ---
 2024-03-01
 - Retour d'un 74HC14N de (D) à (G)
-- 
+- Retour des casses-têtes prêtés précédemement (1 X 1000 (Arche Noé) et 2 X 1000 (Jan van Haasteren) de (G) à (D)
+- Emprunt d'un casse-tête Piatnik 1 X 1000 (La plage) (G)  
+
 **Il faudra déterminer et adopter un format pour rendre ça plus facilement lisible.**
