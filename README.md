@@ -1,7 +1,7 @@
 # DGMaNi
 Suivi (un peu plus;) sérieux des rencontres hebdo de D et G
 ## Nomenclature des fichiers :
-AAAAMMJJ-xx.ext où
+DGMaNi nnn_AAnn_AAAAMMJJ-xx.ext où
 - **AAAAMMJJ** a le sens habituel,
 - **-** le trait-d'union est obligatoire,
 - **xx** seront deux lettres et
