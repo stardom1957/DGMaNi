@@ -13,9 +13,9 @@ DGMaNinnn_AAmm_20AAMMJJ-xx.ext où
 - **.ext** indique le type de fichier.
 
 Exemples :
-- **DGMaNi003_2203_20221007** pour la rencontre du 7 octobre 2022
+- **DGMaNi003_2203_20221014** pour la rencontre du 14 octobre 2022
 - **-**
-- **oj** pour ***o**rdre du jour* et **cr** pour ***c**ompte-**r**endu*
+- **oj** pour ***o**rdre du **j**our et **cr** pour ***c**ompte-**r**endu
 - **.md** normalement, mais peut aussi être **.adoc**.
 
 ## PROCÉDURE pour confirmer la présence dans un oj | cr
