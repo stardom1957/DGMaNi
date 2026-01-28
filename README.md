@@ -12,11 +12,12 @@ DGMaNinnn_AAmm_20AAMMJJ-xx.ext où
 - **xx** seront deux lettres et
 - **.ext** indique le type de fichier.
 
-Exemples :
+Exemple :
 - **DGMaNi003_2203_20221014** pour la rencontre du 14 octobre 2022
 - **-**
 - **oj** pour ***o**rdre du **j**our et **cr** pour ***c**ompte-**r**endu
 - **.md** normalement, mais peut aussi être **.adoc**.
+- **Résultat : DGMaNi003_2203_20221014-oj.md**
 
 ## PROCÉDURE pour confirmer la présence dans un oj | cr
 - Inscrire le nom en caractères gras
