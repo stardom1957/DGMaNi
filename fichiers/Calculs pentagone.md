@@ -1,3 +1,7 @@
-Pour calculer le côté $(c)$ d'un pentagone régulier, divisez le périmètre $(P)$ par 5 ($(c=P/5$)).
-Si l'apothème $(a$) (distance du centre au milieu d'un côté) est connue, $(c=\frac{2a}{\tan (36^{\circ })}\approx 2a\times 0.7265)$.
-La longueur du côté se déduit aussi du rayon $(r)$ du cercle circonscrit : $(c=r\sqrt{\frac{5-\sqrt{5}}{2}}\approx r\times 1.1756)$. 
+Pour calculer le côté $(c)$ d'un pentagone régulier, divisez le périmètre $(P)$ par 5 ($(c=P/5$)).  
+Si l'apothème $(a$) (distance du centre au milieu d'un côté) est connue, $(c=\frac{2a}{\tan (36^{\circ })}\approx 2a\times 0.7265)$.  
+La longueur du côté se déduit aussi du rayon $(r)$ du cercle circonscrit : $(c=r\sqrt{\frac{5-\sqrt{5}}{2}}\approx r\times 1.1756)$.  
+
+Informations provenant de l'IA après une demande à Google (2026-01-28)  
+
+Je voulais un pentagone avec des côtés de 1 m. Le rayon doit donc être de Tan(36)/2 = 0.850629 m.  
