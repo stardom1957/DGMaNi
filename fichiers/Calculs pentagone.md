@@ -4,4 +4,4 @@ La longueur du côté se déduit aussi du rayon $(r)$ du cercle circonscrit : $(
 
 Informations provenant de l'IA après une demande à Google (2026-01-28)  
 
-Je voulais un pentagone avec des côtés de 1 m. Le rayon doit donc être de Tan(36)/2 = 0.850629 m.  
+(G) : Je voulais un pentagone avec des côtés de 1 m. Le rayon doit donc être de 1/1.1756 = 0.850629 m.  
