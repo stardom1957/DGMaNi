@@ -1,0 +1,103 @@
+# DGMaNi no. 109.  
+# Ordre du jour de la rencontre du vendredi 2026-02-06
+Lieu :    Chez Dominique  🎄🏠🌳🌲🌵    
+Horaire : À partir de ___13h30___ 🕜 
+## Présences
+**Dominique Martel (D)**  
+Guy Nicol (G)  
+Note : les ajouts ou modifications sont en ___gras italique___  
+
+## Ordre du jour
+
+1 Nouvelles  
+.1.1  Activités diverses et acquisitions  
+..1.1.1 Activités diverses :  
+..1.1.2 Acquisitions :
+
+2 Informatique en général🖥  
+.2.1 **Libre**  
+.2.2 **Python**  
+..2.2.1 Poursuite de la lecture de **Data Structures \& algorithms in Python** (G) -En attente pour l'instant-  
+..2.2.2 Poursuite la lecture de **The Python 3 Standard Library by Example** (G) -En attente pour l'instant-  
+.2.3 **MIT App Inventor 2**
+
+3 Robotique et électronique 🤖  
+.3.1 **Projet KVA** (D) :  
+..3.1.1 IMU : Teensy 3.2 et MPU9250.
+
+.3.2 **Projet Mindstorm EV3** (G) :  
+..3.2.1 En langage microPython et/ou avec App Inventor 2 -En attente pour l'instant-  
+.3.3 **Arduino**  
+..3.3.1 **I2C** (G) -En attente pour l'instant-  
+..3.3.2 **Détecteur de mouvement/distance** (G) -En attente pour l'instant-  
+.3.4 **Circuit 555 de (G)** :  
+..3.4.1 Étude du comportement à l'oscilloscope.  
+...3.4.1.1 Lectures stables mais avec certaines  « agitations » dans le signal.  
+.3.5 **HM-10 émetteur-récepteur Bluetooth** (G) -En attente pour l'instant-  
+.3.6 **Microcontrôleur ESP32** (G) -En attente pour l'instant-  
+.3.7 **Capteur température/humidité DHT-11** (G) -En attente pour l'instant-  
+.3.8 **Récepteur Infrarouge VS1838B** (G) -En attente pour l'instant-  
+.3.9 **Modules d'amplificateur audio LM386 5 V-12 V 200 gain pour Arduino EK1236 (G)** -En attente pour l'instant-
+
+4 Impression 3D et CNC  
+.4.1 **Impression 3D :**  
+..4.1.1. ***Relance du projet d'impression 3D d'une triquetra (G)***  
+..4.1.1.1 ***Modèles pour production de deux demi-triquetras*** 
+
+5 Autres  
+.5.1 **Blog** (G)  
+..5.1.1 **Voyage 2025**  
+...5.1.1.1 Suite d'articles concernant le voyage dans certains pays de l'est que je viens d'effectuer avec J  
+...5.1.1.2 ***Il ne reste que la fin du voyage à montrer (Stans, Innsbruck et environs)***  
+..5.1.2 ***Apprentissage de Blender***  
+...5.1.2.1 ***Ajout de Add-Ons***  
+...5.1.2.1.1 Poliigon : en lien avec les tutoriels de Blender Guru  
+...5.1.2.1.2 Blenderkit : expérimentation personnelle avec des items gratuits déjà créés par d'autres  
+...5.1.2.1.3 Sketchfab : Essayé plusieurs décors et accessoires
+
+6 Registre des prêts voir [inventaire.md](./inventaire.md) (merci à G :)  
+.6.1 ~~(G) prêt de 6/10 74HC14N  (mars 2023)~~  
+.6.2 ~~(D) Prêt livre C++ Best Practices~~ (2024-02-09)  
+.6.3 ~~Retour d'un 74HC14N de (D) à (G)~~ FAIT  
+.6.4 ~~Emprunt de casse-tête 2 x 1000 + 1 x 1000 par (G)~~  
+..6.4.1 Beaucoup de plaisir à faire les 2 casse-têtes. Pas  ouvert le 1 x 1000 (du groupe 2 x 1000) encore emballé.  
+..6.4.2 Retour de 2 x 1000 + 1 x 1000 par (G)  
+.6.5 ~~Emprunt de 2 X 1000 Jan van H (pour faire le 2e pas encore ouvert) par (G)~~ remis à D le 2024-12-20  
+.6.6 ~~Emprunt (G) de Ananke. (lu par G : remis à D le 2024-07-12)~~  
+.6.7 ~~Emprunt (G) Perceuse mini + bloc alimentation + colonne +clé mandrin, forêts divers.~~ (utilisé par G : remis à D le 2024-07-12)  
+.6.8 Emprunt (G) PIR HC-SR501 (dôme).  
+.6.9 Emprunt (G) HM-10 émetteur-récepteur Bluetooth (voir Web Martyn Currey)  
+.6.10 ~~Prêt de (G) à (D) du coffret CD avec les trames sonores de Myst~~  
+.6.11 Prêt d'une roche noire (ilménite) de (D) à (G) pour photo macro  
+.6.12 ~~Prêt du casque de jeu Stealth 700 Gen2 Max de (D) à (G) le 2025-05-16 (essayé par G et remis à D)~~  
+.6.13 Prêt de 5 adaptateurs vidéo de divers formats de D à G le 2025-10-24
+
+7 ***DGMaNi***  
+.7.1 ***Numérotation  terminée des fichiers cr et oj dans les archives (G)***  
+.7.1.1 ***2022 à 2025 sont faits (G)***  
+.7.1.2 ***Erreur possible dans les numéros actuels (G)*** 
+
+8 Du coq à l'âne  
+.8.1 Nouveaux emprunts?  
+.8.2 ***Discussion sur bidule Sennheiser sans fil de D pour écouter la télévision***  
+
+9 Complètement ludique  
+.9.1. Davinci Resolve Studio Fairlight :  
+..9.1.1. ***Livre tutoriel au sujet de Fairlight : (exercices personnels)***  
+...9.1.1.1. ***Édition de quelques clips tirés de la rencontre du 27 novembre 2025***  
+...9.1.1.1. ***Transcription de quelques clips tirés de la rencontre du 27 novembre 2025 !***  
+.9.2. Projet « On the Run » :   
+..9.2.1. ***Préparation de l'enregistrement de la mélodie***   
+..9.2.2. ***Mixage (DVR Fairlight) : nouveau montage de la narration de V.***  
+.9.3. ***Triquetra 3D, essai de slicing***  
+
+
+
+Breuvages disponibles :
+  * Bourbon Bulleit 🥃
+  * Whisky Irlandais Jameson 🥃  
+  * Whisky Irlandais Jameson Stout Edition 🥃  
+  * Scotch  
+  * Whisky Sour et Old Fashioned disponibles sur demande
+  * Eau et autres diluants à volonté  
+  * Cocktail, etc.  
